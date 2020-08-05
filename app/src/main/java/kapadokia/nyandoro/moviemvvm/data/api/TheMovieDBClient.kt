@@ -1,4 +1,4 @@
-package kapadokia.nyandoro.moviemvvm.api
+package kapadokia.nyandoro.moviemvvm.data.api
 
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient

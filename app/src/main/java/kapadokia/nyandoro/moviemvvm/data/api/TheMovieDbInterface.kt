@@ -1,4 +1,4 @@
-package kapadokia.nyandoro.moviemvvm.api
+package kapadokia.nyandoro.moviemvvm.data.api
 
 import io.reactivex.Single
 import kapadokia.nyandoro.moviemvvm.vo.MovieDetails

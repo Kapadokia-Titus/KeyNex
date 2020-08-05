@@ -1,5 +1,4 @@
-package kapadokia.nyandoro.moviemvvm.vo
-
+package kapadokia.nyandoro.moviemvvm.data.vo
 
 import com.google.gson.annotations.SerializedName
 
