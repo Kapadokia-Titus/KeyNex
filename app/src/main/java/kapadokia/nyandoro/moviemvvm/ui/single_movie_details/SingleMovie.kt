@@ -6,6 +6,8 @@ import kapadokia.nyandoro.moviemvvm.R
 
 class SingleMovie : AppCompatActivity() {
 
+    private lateinit var viewModel: SingleMovieViewModel
+    private lateinit var movieRepository: MovieDetailsRepository
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,9 +17,6 @@ class SingleMovie : AppCompatActivity() {
 
 
     }
-
-
-
 
 
 }
