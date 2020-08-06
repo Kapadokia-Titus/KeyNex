@@ -1,11 +1,10 @@
-package kapadokia.nyandoro.moviemvvm.ui
+package kapadokia.nyandoro.moviemvvm.ui.popular_movie
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kapadokia.nyandoro.moviemvvm.R
 import kapadokia.nyandoro.moviemvvm.ui.single_movie_details.SingleMovie
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
