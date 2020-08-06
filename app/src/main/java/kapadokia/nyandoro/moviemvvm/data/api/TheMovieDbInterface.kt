@@ -1,7 +1,7 @@
 package kapadokia.nyandoro.moviemvvm.data.api
 
 import io.reactivex.Single
-import kapadokia.nyandoro.moviemvvm.vo.MovieDetails
+import kapadokia.nyandoro.moviemvvm.data.vo.MovieDetails
 import retrofit2.http.GET
 import retrofit2.http.Path
 

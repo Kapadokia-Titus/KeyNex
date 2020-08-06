@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kapadokia.nyandoro.moviemvvm.data.api.TheMovieDbInterface
-import kapadokia.nyandoro.moviemvvm.vo.MovieDetails
+import kapadokia.nyandoro.moviemvvm.data.vo.MovieDetails
 
 // here we will call our Api using RxJava and our Api will return the movie details
 // then we'll assign the movie details in a live data
