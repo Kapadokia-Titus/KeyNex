@@ -7,33 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".ui.popular_movie.MainActivity">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical"
-       android:gravity="center">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-       <ProgressBar
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center"
-           android:id="@+id/progress_bar_popular"
-           android:visibility="gone"/>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/progress_bar_popular"
+                android:visibility="gone"/>
 
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center"
-           android:id="@+id/text_error_popular"
-           android:text="@string/connection_problem"
-           android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/text_error_popular"
+                android:text="@string/connection_problem"
+                android:visibility="gone"/>
 
-       <androidx.recyclerview.widget.RecyclerView
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:layout_margin="4dp"
-           android:id="@+id/rv_movie_list"
-           android:scrollbars="vertical"/>
-   </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:id="@+id/rv_movie_list"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
