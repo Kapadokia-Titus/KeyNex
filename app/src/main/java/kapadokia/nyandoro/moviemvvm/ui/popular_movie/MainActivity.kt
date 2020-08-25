@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.networkState.observe(this, Observer {
             progress_bar_popular.visibility = if (viewModel.listIsEmpty() && it == NetworkState.LOADING) View.VISIBLE else View.GONE
-           text_error_popular.visibility = if (viewModel.listIsEmpty() && it == NetworkState.LOADING) View.VISIBLE else View.GONE
+           text_error_popular.visibility = if (viewModel.listIsEmpty() && it == NetworkState.LOADING) View.GONE else View.VISIBLE
 
             if (!viewModel.listIsEmpty()){
                 movieAdapter.setNetworkState(it)
