@@ -20,13 +20,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/txt_error"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/connection_problem"
-            android:visibility="gone"/>
+    <TextView
+        android:id="@+id/txt_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:text="@string/connection_problem"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
@@ -37,7 +42,9 @@
         android:scaleType="fitXY"
         android:src="@drawable/my_movie"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_movie"
@@ -60,31 +67,29 @@
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="50dp">
                 <TextView
-                    android:id="@+id/movie_tagline"
+                    android:id="@+id/movie_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
                     android:text="sub title"
-                    android:textSize="14sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
+
                 <RatingBar
-                    android:layout_width="70dp"
-                    android:layout_height="20dp"
-                    android:layout_gra/>
-            </LinearLayout>
+                    android:id="@+id/rating"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:numStars="5"
+                    android:layout_alignParentEnd="true"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    android:theme="@style/RatingBar" />
+            </RelativeLayout>
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="Movie Info"
-                android:textSize="14sp"
-                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"

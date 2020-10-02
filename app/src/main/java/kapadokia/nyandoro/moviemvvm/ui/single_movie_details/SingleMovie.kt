@@ -50,16 +50,13 @@ class SingleMovie : AppCompatActivity() {
 
     fun bindUI(it :MovieDetails){
         movie_title.text = it.title
-        movie_tagline.text = it.tagline
         movie_release_date.text = it.releaseDate
-        movie_rating.text = it.rating.toString()
-        movie_runtime.text = it.runtime.toString()
+        rating.numStars = it.rating.toInt()
         movie_overview.text =it.overview
 
         // formatting the currency using the number format
         val formatCurrency:NumberFormat = NumberFormat.getCurrencyInstance(Locale.US)
-        movie_budget.text =formatCurrency.format(it.budget)
-        movie_revenue.text =formatCurrency.format(it.revenue)
+
 
         // combining the poster path with poster base url to get the full image Url
         val moviePosterURL:String = POSTER_BASE_URL+it.posterPath
