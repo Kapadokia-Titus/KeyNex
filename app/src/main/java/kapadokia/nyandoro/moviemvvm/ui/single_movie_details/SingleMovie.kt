@@ -51,7 +51,7 @@ class SingleMovie : AppCompatActivity() {
     fun bindUI(it :MovieDetails){
         movie_title.text = it.title
         movie_release_date.text = it.releaseDate
-        rating.numStars = it.rating.toInt()
+        rating.rating = it.rating.toFloat()
         movie_overview.text =it.overview
 
         // formatting the currency using the number format
